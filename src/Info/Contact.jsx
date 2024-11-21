@@ -21,7 +21,7 @@ const Contact = () => {
                 <h1 className=" dark:text-white font-bold text-2xl md:text-4xl lg:text-6xl">
                     Contact Us</h1>
                 <div className=" mt-5 mb-12 lg:mb-20 text-xl font-semibold">
-                    Let's work together
+                    Let's work together here
                 </div>
 
                 <div className="flex flex-col-reverse lg:flex-row ">
