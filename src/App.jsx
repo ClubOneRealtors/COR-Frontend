@@ -3,6 +3,7 @@ import Home from "./Landing/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import WebFont from "webfontloader";
 import Contact from "./Info/Contact";
+import About from "./Info/About";
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/pricing" element={<Pricing />} />
         <Route path="/privacy" element={<Privacy />} />

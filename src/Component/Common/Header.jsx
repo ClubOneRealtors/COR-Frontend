@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { COR_Logo_D_PNG,  dark, darkfill, light, lightfill } from "../../assets/Images/images";
+import { Link } from "react-router-dom"
+import { COR_Logo_D_PNG, dark, darkfill, light, lightfill } from "../../assets/Images/images";
 
 const Header = () => {
 
@@ -30,14 +31,13 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-[1000]">
       <div className="h-20 px-10 md:px-16 lg:px-24 flex justify-between items-center text-txtclr border-b-[3px] dark:border-b-gray-700 bg-white dark:bg-Bluecor dark:text-white ">
-        <img src={COR_Logo_D_PNG} className="h-8 md:h-14 dark:invert" alt="" />
+        <Link to="/"><img src={COR_Logo_D_PNG} className="h-8 md:h-14 dark:invert" alt="Logo" /></Link>
         <div className="flex justify-center items-center">
           <ul className="pr-5 hidden lg:flex justify-between text-xl gap-6 font-semibol border-r-[3px] border-r-gray-500 ">
             <li>Projects</li>
             <li>Locations</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>Career</li>
+            <li><Link className="" to="/about">About Us</Link></li>
+            <li><Link className="" to="/contact">Contact Us</Link></li>
           </ul>
           <button className=" py-2 px-3 mx-5 text-white font-semibold md:text-lg bg-blue-500 dark:bg-blue-700 rounded-3xl ">
             Enquiry </button>

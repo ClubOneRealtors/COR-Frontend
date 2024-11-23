@@ -1,4 +1,3 @@
-// import React, { useEffect, useRef } from "react";
 // import { Helmet } from "react-helmet";
 
 import Footer from "../Component/Common/Footer";
