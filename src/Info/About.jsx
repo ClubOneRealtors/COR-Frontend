@@ -1,4 +1,4 @@
-// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 import { Abhishek, Certificate_1, Certificate_2, Certificate_3, Certificate_4, COR_Logo_D_PNG, COR_Logo_L_PNG, Landing_Hero } from "../assets/Images/images";
 import Footer from "../Component/Common/Footer";
@@ -9,14 +9,14 @@ import Header from "../Component/Common/Header";
 const About = () => {
     return (
         <>
-            {/* <Helmet>
+            <Helmet>
         <title>
           Contact PeerBuddy: Get in Touch for Mentorship and Counseling
         </title>
         <meta property="og:title" content="Contact Us" />
         <meta property="og:description" content="Need help or have questions about our mentorship and counseling services? Contact PeerBuddy today to connect with our team." />
         <meta name="keywords" content="contact us, PeerBuddy contact, mentorship support, counseling services, career advice" />
-      </Helmet> */}
+      </Helmet>
             <Header />
 
             <div className="px-8 md:px-[100px]  py-10 lg:py-20 h-auto text-txtclr dark:text-white dark:bg-Bluecor">

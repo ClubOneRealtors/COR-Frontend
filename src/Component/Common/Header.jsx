@@ -4,16 +4,27 @@ import { COR_Logo_D_PNG, dark, darkfill, light, lightfill } from "../../assets/I
 
 const Header = () => {
 
-  const [theme, setTheme] = useState(null);
   const [mouseEnter, setMouseEnter] = useState(false);
 
-  useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("light");
-    } else {
-      setTheme("light");
+
+  const [theme, setTheme] = useState(() => {
+    const userTheme = localStorage.getItem("theme");
+    if (userTheme) {
+      try {
+        return userTheme ? JSON.parse(userTheme) : "light";
+      } catch (error) {
+        console.error("Error parsing theme JSON:", error);
+        return "light";
+      }
     }
-  }, []);
+  });
+
+  const setUserTheme = (userTheme) => {
+    setTheme(userTheme);
+    localStorage.setItem("theme", JSON.stringify(userTheme));
+  };
+
+  
 
   useEffect(() => {
     if (theme === "dark") {
@@ -24,7 +35,7 @@ const Header = () => {
   }, [theme]);
 
   const handleThemeSwitch = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setUserTheme(theme === "dark" ? "light" : "dark");
   };
 
 

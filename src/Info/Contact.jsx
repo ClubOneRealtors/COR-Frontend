@@ -1,4 +1,4 @@
-// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 import Footer from "../Component/Common/Footer";
 import Header from "../Component/Common/Header";
@@ -6,14 +6,14 @@ import Header from "../Component/Common/Header";
 const Contact = () => {
     return (
         <>
-            {/* <Helmet>
-        <title>
-          Contact PeerBuddy: Get in Touch for Mentorship and Counseling
-        </title>
-        <meta property="og:title" content="Contact Us" />
-        <meta property="og:description" content="Need help or have questions about our mentorship and counseling services? Contact PeerBuddy today to connect with our team." />
-        <meta name="keywords" content="contact us, PeerBuddy contact, mentorship support, counseling services, career advice" />
-      </Helmet> */}
+            <Helmet>
+                <title>
+                    Contact Us
+                </title>
+                <meta property="og:title" content="Contact Us" />
+                <meta property="og:description" content="Need help or have questions about our mentorship and counseling services? Contact PeerBuddy today to connect with our team." />
+                <meta name="keywords" content="contact us, PeerBuddy contact, mentorship support, counseling services, career advice" />
+            </Helmet>
             <Header />
 
             <div className="px-8 md:px-[100px]  py-10 lg:py-20 h-auto text-txtclr dark:text-white dark:bg-Bluecor">
@@ -34,16 +34,19 @@ const Contact = () => {
                             </h2>
                         </div>
                         <form class="mt-8 space-y-6 w-full">
+                            <div>
+                                <input type="text" id="name" placeholder="Full Name" class="w-[100%] px-3 py-2 mt-1 border-b border-b-gray-300 shadow-md outline-none dark:bg-Bluecor dark:text-white rounded-md" />
+                            </div>
+                            <div>
+                                <input type="text" id="Property" placeholder="Property Type" class="w-[100%] px-3 py-2 mt-1 border-b border-b-gray-300 shadow-md outline-none dark:bg-Bluecor dark:text-white rounded-md" />
+                            </div>
                             <div className="w-full">
-                                <input type="email" id="email" placeholder="Your Email Address" class="w-[100%] px-3 py-2 mt-1 border-b border-b-gray-400 shadow-md outline-none dark:bg-Bluecor dark:text-white rounded-md " />
+                                <input type="tel" id="Mobile" placeholder="Mobile Number" class="w-[100%] px-3 py-2 mt-1 border-b border-b-gray-300 shadow-md outline-none dark:bg-Bluecor dark:text-white rounded-md " />
                             </div>
-                            <div>
-                                <input type="text" id="name" placeholder="Full Name" class="w-[100%] px-3 py-2 mt-1 border-b border-b-gray-400 shadow-md outline-none dark:bg-Bluecor dark:text-white rounded-md" />
+                            <div className="w-full">
+                                <input type="email" id="email" placeholder="Your Email Address" class="w-[100%] px-3 py-2 mt-1 border-b border-b-gray-300 shadow-md outline-none dark:bg-Bluecor dark:text-white rounded-md " />
                             </div>
-                            <div>
-                                <input type="text" id="subject" placeholder="Subject" class="w-[100%] px-3 py-2 mt-1 border-b border-b-gray-400 shadow-md outline-none dark:bg-Bluecor dark:text-white rounded-md" />
-                            </div>
-                            <textarea id="message" placeholder="Your Message" rows="3" class="w-[100%] px-3 py-2 mt-1 mb-5 border-b border-b-gray-400 shadow-md outline-none dark:bg-Bluecor dark:text-white rounded-md">
+                            <textarea id="message" placeholder="Your Message" rows="3" class="w-[100%] px-3 py-2 mt-1 mb-5 border-b border-b-gray-300 shadow-md outline-none dark:bg-Bluecor dark:text-white rounded-md">
                             </textarea>
                             <button type="submit" class="w-full px-4 py-2 text-white font-semibold bg-blue-500 dark:bg-white dark:text-txtclr rounded-full">
                                 Send message
