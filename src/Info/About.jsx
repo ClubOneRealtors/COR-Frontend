@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 
-import { Abhishek, Certificate_1, Certificate_2, Certificate_3, Certificate_4, COR_Logo_D_PNG, COR_Logo_L_PNG, Landing_Hero } from "../assets/Images/images";
+import { Abhishek, Certificate_1, Certificate_2, Certificate_3, Certificate_4,  Landing_Hero } from "../assets/Images/images";
 import Footer from "../Component/Common/Footer";
 import Header from "../Component/Common/Header";
 
@@ -11,7 +11,7 @@ const About = () => {
         <>
             <Helmet>
         <title>
-          Contact PeerBuddy: Get in Touch for Mentorship and Counseling
+          About Us
         </title>
         <meta property="og:title" content="Contact Us" />
         <meta property="og:description" content="Need help or have questions about our mentorship and counseling services? Contact PeerBuddy today to connect with our team." />
@@ -19,7 +19,7 @@ const About = () => {
       </Helmet>
             <Header />
 
-            <div className="px-8 md:px-[100px]  py-10 lg:py-20 h-auto text-txtclr dark:text-white dark:bg-Bluecor">
+            <div className="px-10 md:px-16 lg:px-24  py-10 lg:py-20 h-auto text-txtclr dark:text-white dark:bg-Bluecor">
 
 
                 <h1 className=" text-center dark:text-white font-bold text-2xl md:text-4xl lg:text-6xl">
@@ -87,7 +87,7 @@ const About = () => {
                     <img src={Certificate_2} className="w-[31%] h-[200px]" alt="" />
                     <img src={Certificate_3} className="w-[31%] h-[200px] mb-5" alt="" />
                     <img src={Certificate_4} className="w-[31%] h-[200px]" alt="" />
-                    <img src={Landing_Hero} className="w-[31%] h-[200px]" alt="" />
+                    {/* <img src="" className="w-[31%] h-[200px] bg-white" alt="" /> */}
                     <img src={Certificate_2} className="w-[31%] h-[200px]" alt="" />
                 </div>
                 </div>

@@ -16,7 +16,7 @@ const Contact = () => {
             </Helmet>
             <Header />
 
-            <div className="px-8 md:px-[100px]  py-10 lg:py-20 h-auto text-txtclr dark:text-white dark:bg-Bluecor">
+            <div className="px-10 md:px-16 lg:px-24  py-10 lg:py-20 h-auto text-txtclr dark:text-white dark:bg-Bluecor">
                 <h1 className=" dark:text-white font-bold text-2xl md:text-4xl lg:text-6xl">
                     Contact Us</h1>
                 <div className=" mt-5 mb-12 lg:mb-20 text-xl font-semibold">

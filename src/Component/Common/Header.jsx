@@ -45,8 +45,8 @@ const Header = () => {
         <Link to="/"><img src={COR_Logo_D_PNG} className="h-8 md:h-14 dark:invert" alt="Logo" /></Link>
         <div className="flex justify-center items-center">
           <ul className="pr-5 hidden lg:flex justify-between text-xl gap-6 font-semibol border-r-[3px] border-r-gray-500 ">
-            <li>Projects</li>
-            <li>Locations</li>
+            <li><Link className="" to="/projects">Projects</Link></li>
+            <li><Link className="" to="/locations">Locations</Link></li>
             <li><Link className="" to="/about">About Us</Link></li>
             <li><Link className="" to="/contact">Contact Us</Link></li>
           </ul>

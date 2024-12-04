@@ -9,14 +9,14 @@ const Locations = () => {
 
             <div className="flex flex-wrap  ">
                 <div className="w-full flex justify-between">
-                <button className="w-[24%] mb-5 py-4 text-xl rounded-2xl bg-gray-200">Noida</button>
-                <button className="w-[24%] mb-5 py-4 text-xl rounded-2xl bg-gray-200">Greater Noida</button>
-                <button className="w-[24%] mb-5 py-4 text-xl rounded-2xl bg-gray-200">Delhi</button>
-                <button className="w-[24%] mb-5 py-4 text-xl rounded-2xl bg-gray-200">Gurugram</button>
+                <button className="w-[24%] mb-5 py-5 text-xl rounded-2xl bg-gray-400">Noida</button>
+                <button className="w-[24%] mb-5 py-5 text-xl rounded-2xl bg-gray-400">Greater Noida</button>
+                <button className="w-[24%] mb-5 py-5 text-xl rounded-2xl bg-gray-400">Delhi</button>
+                <button className="w-[24%] mb-5 py-5 text-xl rounded-2xl bg-gray-400">Gurugram</button>
                 </div>
                 <div className="w-full flex justify-between">
-                <button className="w-[24%] mb-5 py-4 text-xl rounded-2xl bg-gray-200">Dehradoon</button>
-                <button className="w-[24%] mb-5 py-4 text-xl rounded-2xl bg-gray-200">Muradabad</button>
+                <button className="w-[24%] mb-5 py-5 text-xl rounded-2xl bg-gray-400">Dehradoon</button>
+                <button className="w-[24%] mb-5 py-5 text-xl rounded-2xl bg-gray-400">Muradabad</button>
                 <p className="w-[24%] mb-5 py-4 text-xl rounded-2xl "></p>
                 <p className="w-[24%] mb-5 py-4 text-xl rounded-2xl "></p>
                 </div>

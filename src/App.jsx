@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import WebFont from "webfontloader";
 import Contact from "./Info/Contact";
 import About from "./Info/About";
+import Locations_H from "./Info/Loactions";
+import Project from "./Info/Projects";
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/locations" element={<Locations_H />} />
+        <Route path="/projects" element={<Project />} />
         {/* <Route path="/pricing" element={<Pricing />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/Terms" element={<Terms />} />
